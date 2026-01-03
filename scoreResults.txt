@@ -1,0 +1,41 @@
+{
+  success: true,
+  message: 'Assessment submitted successfully',
+  requestId: 'iad1::7wmwk-1767469163181-19f2e6e67f05',
+  results: {
+    score: 81.94444444444444,
+    percentage: 82,
+    status: 'PASS',
+    breakdown: { high_risk: [Object], fever: [Object], data_quality: [Object] },
+    feedback: { strengths: [Array], issues: [Array] },
+    attempt_number: 2,
+    max_attempts: 3,
+    remaining_attempts: 1,
+    is_personal_best: true,
+    best_score: 82,
+    best_attempt_number: 2,
+    can_resubmit: true,
+    processed_in_ms: 204
+  }
+}
+
+{
+  success: true,
+  message: 'Assessment submitted successfully',
+  requestId: 'iad1::kvt8d-1767469314624-e27c02116489',
+  results: {
+    score: 81.94444444444444,
+    percentage: 82,
+    status: 'PASS',
+    breakdown: { high_risk: [Object], fever: [Object], data_quality: [Object] },
+    feedback: { strengths: [Array], issues: [Array] },
+    attempt_number: 3,
+    max_attempts: 3,
+    remaining_attempts: 0,
+    is_personal_best: true,
+    best_score: 82,
+    best_attempt_number: 3,
+    can_resubmit: false,
+    processed_in_ms: 200
+  }
+}
