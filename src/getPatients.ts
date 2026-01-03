@@ -44,6 +44,8 @@ export default async function getAllPatientData(url: string, api_key: string): P
         patients.push(...response.data);
       }
 
+      console.log(`Getting patients from page: ${page}`);
+
       hasNext = response.pagination.hasNext;
       page++;
 

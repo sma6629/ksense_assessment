@@ -1,4 +1,4 @@
-import getAllPatientData from "./getPatients.ts";
+import getAllPatientData from "./getPatients.js";
 
 export default async function getScoringResults(url: string, api_key: string) {
   const patients = await getAllPatientData(url, api_key);

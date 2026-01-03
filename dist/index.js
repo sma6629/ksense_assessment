@@ -1,17 +1,13 @@
 import "dotenv/config";
 import getScoringResults from "./getScores.js";
-
-const API_KEY = process.env.API_KEY!;
-const API_GET_PATIENTS_URL = process.env.API_GET_PATIENTS_URL!;
-const API_POST_SCORES_URL = process.env.API_POST_SCORES_URL!;
-
+const API_KEY = process.env.API_KEY;
+const API_GET_PATIENTS_URL = process.env.API_GET_PATIENTS_URL;
+const API_POST_SCORES_URL = process.env.API_POST_SCORES_URL;
 async function submitScore() {
     const res = await getScoringResults(API_GET_PATIENTS_URL, API_KEY);
-
     const submitBody = JSON.stringify(res);
-    console.log(`Submitting risk scored patients \n${submitBody}`);
-
-    try {
+    console.log(submitBody);
+    /* try {
         const submitRes = await fetch(API_POST_SCORES_URL, {
             method: "POST",
             headers: {
@@ -26,10 +22,9 @@ async function submitScore() {
         }
 
         const submitResData = await submitRes.json();
-        console.log(`Score results \n${submitResData}`);
+        console.log(submitResData);
     } catch (err) {
         console.log(err);
-    }
+    } */
 }
-
 submitScore();
